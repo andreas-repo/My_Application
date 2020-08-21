@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    
+
     <TextClock
         android:id="@+id/my_clock"
         android:layout_width="wrap_content"
@@ -17,6 +17,13 @@
         android:format12Hour="h:mm:ss a"
         android:textSize="32sp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="32sp"
+        android:id="@+id/test_text" />
 
     <Button
         android:layout_width="match_parent"
@@ -25,7 +32,6 @@
         android:text="@string/time_of_austria"
         android:onClick="onClickAustria"
         android:id="@+id/austria_button" />
-
 
     <Button
         android:layout_width="match_parent"
@@ -42,6 +48,7 @@
         android:text="@string/time_of_north_america"
         android:onClick="onClickNorthAmerica"
         android:id="@+id/north_america_button" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
