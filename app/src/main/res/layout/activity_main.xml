@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <TextClock
+        android:id="@+id/my_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:format12Hour="h:mm:ss a"
+        android:textSize="32sp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/time_of_austria"
+        android:onClick="onClickAustria"
+        android:id="@+id/austria_button" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/austria_button"
+        android:text="@string/time_of_india"
+        android:onClick="onClickIndia"
+        android:id="@+id/india_button" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/india_button"
+        android:text="@string/time_of_north_america"
+        android:onClick="onClickNorthAmerica"
+        android:id="@+id/north_america_button" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/north_america_button"
+        android:text="@string/time_of_japan"
+        android:onClick="onClickJapan"
+        android:id="@+id/japan_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

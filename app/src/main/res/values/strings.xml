@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="time_of_austria">Time of Austria</string>
+    <string name="time_of_india">Time of India</string>
+    <string name="time_of_north_america">Time of North America</string>
+    <string name="time_of_japan">Time of Japan</string>
+</resources>
